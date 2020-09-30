@@ -1,1 +1,217 @@
-Hello World
+<!DOCTYPE html>
+  <html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="coolstyle.css">
+  <style>
+    .topnav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      background-color: grey;
+      overflow: hidden;
+      color: #f2f2f2;
+      font-size: 3vw;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin: 1vw;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 3vw;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: black;
+      color: white;
+    }
+
+    div{
+      margin: 1vw;
+    }
+
+    h1 {
+      font-size: 7vw;
+    }
+
+    h2 {
+      font-size: 3vw;
+    }
+
+    table {
+      font-size: 1.5vw;
+    }
+
+    @media(min-width: 600px) {
+        div {
+          background-color: orange
+        }
+      }
+
+      @media(max-width: 600px) {
+        div {
+          background-color: yellow;
+        }
+      }
+    </style>
+</head>
+
+<body>
+  <div class="row justify-content-center">
+    <div class="topnav">
+      <p>Emiliano Zhu</p>
+      <a class="active" href="./">Home</a>
+      <a href="./contact/">Contact</a>
+      <a href="./projects/">Projects</a>
+      <a href="./photographs/">Photographs</a>
+    </div>
+    <div class="col-md-5 text-center">
+      <h1><strong>Everything About Emiliano Zhu</strong></h1>
+      <h2><strong>Skills</strong></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Programming Languages</th>
+            <th>Framworks & Databases</th>
+            <th>Tools</th>
+          </tr>
+        <tbody>
+            <tr>
+              <td>
+                Java, JavaScript, Python, C/C++, HTML, CSS, MATLAB
+              </td>
+              <td>
+                NodeJS, ExpressJS, React, SQL (Oracle, MySQL), NoSQL (MongoDB)
+              </td>
+              <td>
+                IntelliJ, Visual Studio, Git, Eclipse, Sublime Text, Postman, Virtual Box, Processing
+              </td>
+        </tbody>
+      </table>
+      <h2><strong>Education</strong></h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Institution</th>
+              <th>Location</th>
+              <th>Degree</th>
+              <th>Duration</th>
+              <th>Cummulative GPA</th>
+              <th>Related Courseworks</th>
+            </tr>
+          <tbody>
+              <tr>
+                <td>Northeastern University</td>
+                <td>Seattle, WA</td>
+                <td>Master of Science in Computer Science</td>
+                <td>September 2019 - Present</td>
+                <td>4.0 / 4.0</td>
+                <td>Database Management, Web Development, Computer System, Object-Oriented
+                  Design, Discrete Math & Data Structure, Algorithm, Introduction to Computer Science</td>
+              <tr>
+                <td>Sichuan University</td>
+                <td>Chengdu, China</td>
+                <td>Bachelor of Engineering in Chemical Engineering</td>
+                <td>September 2014 - June 2019</td>
+                <td>3.6 / 4.0</td>
+                <td>N/A</td>
+          </tbody>
+        </table>
+        <h2><strong>Projects</strong></h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+              <th>Contributions</th>
+            </tr>
+          <tbody>
+            <tr>
+              <td>Covid-19 Tracking Website</td>
+              <td>A Website for tracking Covid-19 related data, reading related news, and posting discussion | MERN Stack, Heroku</td>
+              <td>
+                <ul>
+                  <li>Developed RESTful APIs of Discussion Forum based with Node and Express to implement CRUD of entities
+                    derived from MongoDB database by Mongoose, and provided full authentication using Passport.jwt
+                  </li>
+                  <li>
+                    Implemented Signup/Login and Posts/Comments user interfaces with React, Redux, and Thunk
+                  </li>
+                  <li>
+                    Gathered and presented Covid-19 related data in various forms with Web Crawling and Data Visualization
+                  </li>
+                  <li>
+                    Deployed the project on Heroku
+                  </li>
+                </ul>
+              </td>
+            <tr>
+              <td>Web Mapping Application – Bear Map</td>
+              <td>A Web mapping application for location display and optimal route planning | Java, Trie, K-d Tree, A* Algorithm, Heroku</td>
+              <td>
+                <ul>
+                  <li>
+                    Implemented autocomplete search bar with Trie, and pinned the searched locations on the map component
+                  </li>
+                  <li>
+                    Consumed query box from front end, and rendered images of the appropriate resolution (location display)
+                  </li>
+                  <li>
+                    Enabled shortest path search between any pair of positions on the map with K-d Tree and A* algorithm, and
+generated the corresponding sequence of navigation instructions (route planning)
+                  </li>
+                  <li>
+                    Deployed the project on Heroku
+                  </li>
+                </ul>
+              </td>
+            <tr>
+              <td>Movie Search Engine</td>
+              <td>A multiprocessing movie search engine with a file crawler, a file processor, an indexer, and a query processor | C, Linux, Valgrind, Emacs, Mutex</td>
+              <td>
+                <ul>
+                  <li>
+                    Crawled a movie file system, processed about 50 files to extract significant words or concepts, indexed >5 million movies, and boosted performance by multithreading with mutex
+                  </li>
+                  <li>
+                    Launched the search engine as a server using socket programming with TCP/IP protocol suites that concurrently serves multiple clients
+                  </li>
+                </ul>
+              </td>
+            <tr>
+              <td>Othello Game</td>
+              <td>A strategy board game for two players (human vs. computer AI), played on an 8×8 board | Python, Processing, AI</td>
+              <td>
+                <ul>
+                  <li>
+                    Developed the Othello Game using Processing and designed corresponding game algorithms in Python
+                  </li>
+                  <li>
+                    Managed interactions and scores management by asynchronous processing and alert dialog
+                  </li>
+                  <li>
+                    Trained an AI computer opponent by searching the game tree with shortest paths algorithm and alpha-beta
+                    pruning, gaining 83% winning probability
+                  </li>
+                </ul>
+              </td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</body>
+</html>

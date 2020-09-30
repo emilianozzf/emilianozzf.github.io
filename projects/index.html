@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My website title</title>
+  <link rel="stylesheet" href="coolstyle.css">
+  <style>
+      .topnav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        background-color: grey;
+        overflow: hidden;
+        color: #f2f2f2;
+        font-size: 3vw;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: 1vw;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 3vw;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: black;
+        color: white;
+      }
+
+      div{
+      margin: 1vw;
+    }
+
+      h1 {
+        font-size: 7vw;
+      }
+
+      p {
+        font-size: 1.5vw;
+      }
+
+      @media(min-width: 600px) {
+        div {
+          background-color: orange
+        }
+      }
+
+      @media(max-width: 600px) {
+        div {
+          background-color: yellow;
+        }
+      }
+
+  </style>
+</head>
+
+<body>
+  <div class="row justify-content-center">
+    <div class="topnav">
+      <p style="font-size: 3vw">Emiliano Zhu</p>
+      <a href="../">Home</a>
+      <a href="../contact">Contact</a>
+      <a class="active" href="./">Projects</a>
+      <a href="../photographs/">Photographs</a>
+    </div>
+    <div class="col-md-5 text-center">
+      <h1><strong>Projects</strong></h1>
+      <p><a href="https://github.com/Covid19Site/Covid19-Tracking-Website">Covid-19 Tracking Website</a></p>
+      <p><a href="https://github.com/emilianozzf/Web-Mapping-Application">Web Mapping Application</a></p>
+      <p><a href="https://github.com/emilianozzf/Movie-Search-Engine">Movie Search Engine</a></p>
+      <p><a href="https://github.com/emilianozzf/Othello-Game">Othello Game</a></p>
+    </div>
+  </div>
+</body>
+</html>
